@@ -1,63 +1,62 @@
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+h1 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
 }
-
-body,
-div,
-h1,
-h2,
-h3,
-h4,
-p,
-a,
-span {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.wrapper{
-    width: 1200px;
-    padding: 0 60px 0 60px;
+.contact-div {
+    width: 80%;
+    max-height: fit-content;
+    padding: 40px;
+    border: 1px solid rgb(173, 173, 173);
+    border-radius: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     margin: 0 auto;
 }
-
-header{
-    height: 100px;
-    background-color: #af1e28;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact-div__img-cont {
+    width: 35%;
 }
-header .wrapper{
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* padding: 10px 20px 10px 20px; */
-}
-
-header a{
-    color: white;
-}
-header nav{
-    display: flex;
-    justify-content: center;
+.contact-div img {
+    border-radius: 100%;
     width: 100%;
-    gap: 80px;
+}
+h2 {
+    font-size: 30px;
+}
+.contact-div__desc {
+    max-width: 500px;
+}
+.contact-div__desc p {
+    margin-bottom: 20px;
+}
+.contact-div__desc p {
+    font-size: 18px;
+    max-width: 400px;
+}
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+}
+.contact-line {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 20px;
+    font-weight: 700;
 }
-.header__logo{
-    height: 50px;
-    width:fit-content;
+.contact-line img {
+    width: 40px;
+    height: 40px;
+}
+/* footer {
     position: absolute;
-    cursor: pointer;
-}
-.header__logo img{
-    height: 100%;
+    bottom: 0px;
     width: 100%;
+    height: 200px;
+} */
+footer{
+    margin-top: -100px;
 }
